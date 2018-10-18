@@ -1,0 +1,461 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    background:white;
+}
+
+.layout-header {
+    min-width: 800px;
+    width: 95%;
+    margin: 0 auto
+}
+
+header {
+    width:100%;
+    height: 100%;
+    background: url('../index/img/header-bg.jpg') center center no-repeat;
+    background-size: cover
+}
+
+header a.logo {
+    color: #fed136;
+    float: left;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    float: left;
+    font-size: 18px;
+}
+
+header ul li a {
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+header ul li a:hover{
+    background: #fed136
+}
+
+
+.header-intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center
+}
+
+.header-intro h3 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.header-intro h4 {
+    font-size: 38px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background: #fed136;
+    color: white;
+    padding: 10px 20px;
+    font-size: 28px;
+    border-radius: 8px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.button:hover {
+    opacity: 1
+}
+
+
+.layout-con {
+    width: 90%;
+    min-width: 800px;
+    margin: 50px auto 0;
+}
+
+section:nth-child(1) , section:nth-child(2) ,section:nth-child(3) ,section:nth-child(4){
+    min-height: 100%;
+}
+
+section {
+    width: 100%;
+    text-align: center
+}
+
+
+section h3{
+    font-size: 38px;
+    margin-top: 150px;
+}
+
+section h3+p {
+    font-size: 16px
+}
+
+
+section ul li {
+    width: 33%;
+    float: left
+}
+
+section ul li>span {
+    display: inline-block;
+    width:100px;
+    background: #fed136;
+    padding: 8px 0;
+    color: white;
+    border-radius: 50%;
+}
+
+section ul li>span.iconfont {
+    font-size: 50px;
+}
+
+section ul li h5 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section ul li p {
+    color: #777;
+    margin-top: 20px;
+}
+
+figure {
+    width: 33.3%;
+    float: left;
+    padding:0 20px;
+    position: relative;
+}
+
+figure .iconfont {
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+figure img {
+    width: 100%;
+    height: 300px;
+}
+
+figcaption {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.img-hover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.mode-hover {
+    width: 100%;
+    height: 300px;
+    background: rgba(254, 209, 54, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    transition: all ease .5s;
+}
+
+.mode-hover::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.mode-hover:hover{
+    opacity:0.8;
+    
+}
+
+.timeline-intro li:nth-child(1) {
+    margin-top: 50px;
+}
+
+.timeline-intro {
+    position: relative;
+}
+
+.timeline-intro li {
+    width: 50%;
+    margin-left:100px;
+    margin-top: 200px;
+}
+
+.timeline-intro li:nth-child(even) {
+    float: right;
+}
+
+.timeline-intro li:last-child {
+    margin-left: 0px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+
+.timeline-intro li:last-child span {
+    display: inline-block;
+    width: 200px;
+    line-height: 40px; 
+    height: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    padding:38px 0;
+    background: rgba(254, 209, 54, .9);
+    font-weight: bold;
+    border:5px solid #f1f1f1;
+}
+
+.layout-time {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right
+}
+
+.timeline-intro {
+    margin-top: 80px;
+    vertical-align: middle
+}
+
+.timeline-intro img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid #f1f1f1;
+}
+
+.timeline-intro li:nth-child(odd) img{
+    float: right;
+    margin-left: 10px;
+}
+
+.timeline-intro li:nth-child(even) img{
+    float: left;
+    margin-right: 10px;
+}
+
+/* .timeline-intro img:nth-child(odd) {
+    float: left;
+    margin-left: 10px;
+}
+
+
+.timeline-intro img:nth-child(even) {
+    float: left;
+    margin-right: 10px;
+} */
+
+
+
+.timeline-intro-actice {
+    display: inline;
+    vertical-align: middle;
+    background:red;
+}
+
+li:nth-child(odd) .timeline-intro-actice {
+    margin-right: 240px;
+}
+
+li:nth-child(even) .timeline-intro-actice {
+    margin-left: 240px;
+}
+
+.timeline-intro li:nth-child(even) {
+    margin-right: 100px;
+    text-align: left
+}
+
+.timeline-intro-actice p {
+    margin-top: 10px;
+}
+
+.timeline-intro::before {
+    content: '';
+    width: 0px;
+    border:2px solid #f1f1f1;
+    position: absolute;
+    top: 50px;
+    bottom: 0%;
+    left: 50%;
+    z-index: -1
+}
+
+.person-tel img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%
+}
+
+.person-tel p {
+    margin-top: 0;;
+}
+
+.tel-icon {
+    margin-top:15px;
+}
+
+.tel-icon a {
+    display: inline-block;
+    padding: 8px 10px;
+    background:#222;
+    color: #ccc;
+    border-radius: 50%;
+}
+
+.tel-icon .iconfont {
+    font-size: 24px;
+    line-height: 1;
+}
+
+a.center {
+    margin:0 20px;
+}
+
+p.tel-footer {
+    margin: 50px auto 0;
+    width: 800px;
+    text-align: center;
+}
+
+
+.footer-section h3{
+    margin-top: 30px;
+}
+
+.footer-section ul{
+    width: 1200px;
+    margin: 100px auto 0;
+}
+
+.footer-section ul li {
+    width: 25%;
+    text-align: center
+}
+
+.footer-section ul li img{
+    width: 90%;
+    height: auto;
+}
+
+
+.message-send {
+    font-size: 40px;
+    color: #fff;
+    background: url('../index/img/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.message-send>p {
+    margin-bottom: 75px;
+}
+
+ul.message {
+    height: 200px;
+}
+
+ul.message>li {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+ul.message>li>input {
+    width: 96%;
+    padding: 16px 2.5%;
+    font-size: 18px;
+    border:none;
+    border-radius: 6px;
+}
+
+ul.message>li:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between
+}
+
+textarea {
+    padding: 20px 20px;
+    width: 96%;
+    height: 100%;
+    float: right;
+    border-radius: 6px;
+    color: #777;
+    font-size: 18px;
+    border:none;
+    font-weight: bold
+}
+
+.message-send .button {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+footer {
+    width: 800px;
+    margin: 0px auto 50px;
+}
+
+footer ul li {
+    float: left;
+    width: 33%;
+    vertical-align: middle
+}
+
+footer ul li:nth-child(1){
+    line-height: 43px;
+}
+
+footer ul li:nth-child(2){
+    text-align: center
+}
+
+li.tel-icon {
+    margin-top: 0;
+}
+
+footer ul li:last-child {
+    text-align: right;
+    line-height: 43px;
+}
+
+
+
+
+
+
+
+
+
+
