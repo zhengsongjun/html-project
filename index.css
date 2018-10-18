@@ -13,7 +13,7 @@ body,html {
 header {
     width:100%;
     height: 100%;
-    background: url('../index/img/header-bg.jpg') center center no-repeat;
+    background: url('img/header-bg.jpg') center center no-repeat;
     background-size: cover
 }
 
@@ -371,7 +371,7 @@ p.tel-footer {
 .message-send {
     font-size: 40px;
     color: #fff;
-    background: url('../index/img/1.jpg');
+    background: url('img/1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
